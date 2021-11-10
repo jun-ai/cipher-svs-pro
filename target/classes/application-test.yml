@@ -1,5 +1,5 @@
 server:
-  port: 6090
+  port: 9014
 # 数据源配置
 spring:
   datasource:

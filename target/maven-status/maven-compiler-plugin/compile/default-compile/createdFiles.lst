@@ -1,6 +1,8 @@
 com\koalii\svs\client\dto\ResultUtil.class
 com\koalii\svs\client\dto\CodeEnum.class
+com\koalii\svs\client\dao\SvsMapper.class
 com\koalii\svs\client\util\HttpClientUtils.class
 com\koalii\svs\client\sm\SM3DegistUtil.class
 com\koalii\svs\client\SvSProApplication.class
+com\koalii\svs\client\dto\TSignRecord.class
 com\koalii\svs\client\task\TimingTask.class

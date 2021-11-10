@@ -1,12 +1,12 @@
 server:
-  port: 6090
+  port: 9014
 # 数据源配置
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: org.postgresql.Driver
     #政务外网（测试）环境
-    url: jdbc:postgresql://172.25.1.17:54321/sanyu_xc?schema=public&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    url: jdbc:postgresql://172.25.1.161:54321/sanyu_xc?schema=public&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
     username: system
     password: 123456
     hikari:
@@ -34,7 +34,11 @@ svs:
   certAlias: shsfsm2
 # MyBatis
 mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.koalii.svs.client.dao
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
-  mapperLocations: classpath*:com/koalii/svs/client/dao/*.xml
+  mapperLocations: classpath*:mapper/*Mapper.xml
+  # 加载全局的配置文件
+  configLocation: classpath:mapper/mybatis-config.xml
 logging:
   config: classpath:logback-spring.xml
