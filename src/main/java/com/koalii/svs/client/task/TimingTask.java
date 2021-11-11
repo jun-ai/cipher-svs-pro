@@ -60,16 +60,16 @@ public class TimingTask {
      * @param b64SignedMessage
      * @return
      */
-    public Boolean verifySignMessage(String b64OriginData,String b64SignedMessage){
+    public ResultUtil verifySignMessage(String b64OriginData,String b64SignedMessage){
         HashMap header=new HashMap();
         header.put("Content-Type", "application/json;charset=utf-8");
-        log.info("请求头为"+header);
+        log.info("验签请求头为"+header);
         JSONObject param = new JSONObject();
         param.put("b64OriginData",b64OriginData);
         param.put("b64SignedMessage",b64SignedMessage);
-        log.info("请求体为"+param.toString());
-        HttpClientUtils.doPostJson(verifySignMessageUrl,header,param.toString());
-        return false;
+        log.info("验签请求体为"+param.toString());
+        String s = HttpClientUtils.doPostJson(verifySignMessageUrl, header, param.toString());
+        return ResultUtil.success();
     }
 
     /**
@@ -82,7 +82,6 @@ public class TimingTask {
         try {
             List<String> fName = new ArrayList<>();
             List<String> allFile = new ArrayList<>();
-
             allFile.add("/etc/passwd");
             allFile.add("/etc/passwd-");
             allFile.add("/etc/shadow");
@@ -95,9 +94,7 @@ public class TimingTask {
             allFile.add("/etc/sudoers");
             Date currentTime = new Date();
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-
             String today = formatter.format(currentTime);
-
             allFile.forEach(f -> {
                 try{
                     FileInputStream inputStream = new FileInputStream(new File(f));
@@ -105,17 +102,13 @@ public class TimingTask {
                     int len=0;
                     ByteArrayOutputStream bos = new ByteArrayOutputStream();
                     while((len=inputStream.read(buffer))!=-1){
-                        bos.write(buffer,0,len);
-                    }
+                        bos.write(buffer,0,len); }
                     bos.flush();
                     byte[] originData = bos.toByteArray();
                     String signMessageDetach = SM3DegistUtil.hash(originData.toString());
                     String loginSignName=(today+f).replace("/","-")+".txt";
                     String parent="/datafile/logsign";
                     String filename=parent+"/"+loginSignName;
-                    /**
-                     * 签名成功并插入数据库
-                     */
                     ResultUtil resultUtil = signMessage(signMessageDetach);
                     if ("200".equals(resultUtil.getCode())){
                         TSignRecord tSignRecord=new TSignRecord();
@@ -128,7 +121,6 @@ public class TimingTask {
                         tSignRecord.setSign_b64OriginData(signMessageDetach);
                         tSignRecord.setSign_b64SignedMessage(b64SignedMessage);
                         svsMapper.insert(tSignRecord);
-                        log.info("插入数据库控制信息表文件签名记录成功");
                     }else {
                         log.info(filename+"访问控制信息表文件签名失败");
                     }
@@ -161,16 +153,11 @@ public class TimingTask {
         try {
             List<String> fName = new ArrayList<>();
             List<String> allFile = new ArrayList<>();
-
-            //allFile.add("/var/log/user");
-            //allFile.add("/var/log/auth");
             allFile.add("/var/log/syslog");
             allFile.add("/var/log/messages");
             Date currentTime = new Date();
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
-
             String today = formatter.format(currentTime);
-
             allFile.forEach(f -> {
                         try{
                             FileInputStream inputStream = new FileInputStream(new File(f));
@@ -183,15 +170,21 @@ public class TimingTask {
                             bos.flush();
                             byte[] originData = bos.toByteArray();
                             String signMessageDetach = SM3DegistUtil.hash(originData.toString());
-
                             String loginSignName=(today+f).replace("/","-")+".txt";
                             String parent="/datafile/logsign";
                             String filename=parent+"/"+loginSignName;
-                            /**
-                             * 签名
-                             */
                             ResultUtil resultUtil = signMessage(signMessageDetach);
                             if ("200".equals(resultUtil.getCode())){
+                                TSignRecord tSignRecord=new TSignRecord();
+                                log.info(filename+"访问日志文件签名成功");
+                                String result=(String) resultUtil.getData();
+                                log.info("result为"+result);
+                                JSONObject js = JSONObject.parseObject(result);
+                                String b64SignedMessage = js.get("b64SignedMessage").toString();
+                                tSignRecord.setSign_type("sign_log");
+                                tSignRecord.setSign_b64OriginData(signMessageDetach);
+                                tSignRecord.setSign_b64SignedMessage(b64SignedMessage);
+                                svsMapper.insert(tSignRecord);
                                 log.info(filename+"访问日志文件签名成功");
                             }else {
                                 log.info(filename+"访问日志文件签名失败");
@@ -213,6 +206,31 @@ public class TimingTask {
             e.printStackTrace();
         }
         return  ResultUtil.fail("500","fail");
+    }
+
+    /**
+     * 验证不带原文的消息签名
+     * 每天的2点、8点、14点、20点都执行一次
+     * @return
+     */
+    @Scheduled(cron="0/5 * * * * ?")
+    //@Scheduled(cron="0 0 2,8,12,14,20 * * ?")
+    public ResultUtil verifySign() {
+        List<TSignRecord> tSignEtcRecordList = svsMapper.selectBySigntype("sign_etc");
+        for (TSignRecord tSignRecord : tSignEtcRecordList) {
+            String sign_b64OriginData = tSignRecord.getSign_b64OriginData();
+            String sign_b64SignedMessage = tSignRecord.getSign_b64SignedMessage();
+            verifySignMessage(sign_b64OriginData,sign_b64SignedMessage);
+            log.info("服务器访问控制信息表文件验签成功");
+        }
+        List<TSignRecord> tSignLogRecordList = svsMapper.selectBySigntype("sign_log");
+        for (TSignRecord tSignRecord : tSignLogRecordList) {
+            String sign_b64OriginData = tSignRecord.getSign_b64OriginData();
+            String sign_b64SignedMessage = tSignRecord.getSign_b64SignedMessage();
+            verifySignMessage(sign_b64OriginData,sign_b64SignedMessage);
+            log.info("服务器访问日志文件验签成功");
+        }
+        return ResultUtil.success();
     }
 }
 

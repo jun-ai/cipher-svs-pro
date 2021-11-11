@@ -207,7 +207,7 @@ public class HttpClientUtils {
 
             if (response.getEntity() != null) {
                 resultString = EntityUtils.toString(response.getEntity(), "utf-8");
-                log.info("返回结果为"+resultString.toString());
+                log.info("验签返回结果为"+resultString.toString());
             }
         } catch (Exception e) {
             log.error("doPostJson请求报错:{}"+e);

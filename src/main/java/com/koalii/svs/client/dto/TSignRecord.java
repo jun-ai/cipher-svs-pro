@@ -3,14 +3,12 @@ package com.koalii.svs.client.dto;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.io.Serializable;
 
 @Data
 @Getter
 @Setter
 public class TSignRecord implements Serializable {
-
 
     /**
      * 主键）

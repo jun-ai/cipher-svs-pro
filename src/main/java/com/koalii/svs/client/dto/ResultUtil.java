@@ -20,6 +20,10 @@ public class ResultUtil {
         return resultData(CodeEnum.SUCCESS.val(), msg, data);
     }
 
+    public static ResultUtil success() {
+        return resultData(CodeEnum.SUCCESS.val());
+    }
+
     public static ResultUtil fail(String code, String msg) {
         return resultData(code, msg, null);
     }
@@ -33,6 +37,11 @@ public class ResultUtil {
         resultData.setCode(code);
         resultData.setMsg(msg);
         resultData.setData(data);
+        return resultData;
+    }
+    private static ResultUtil resultData(String code) {
+        ResultUtil resultData = new ResultUtil();
+        resultData.setCode(code);
         return resultData;
     }
 }

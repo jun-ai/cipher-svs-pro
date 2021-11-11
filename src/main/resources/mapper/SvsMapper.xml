@@ -16,4 +16,10 @@
         #{sign_b64OriginData,jdbcType=VARCHAR},#{sign_b64SignedMessage,jdbcType=VARCHAR})
     </insert>
 
+    <select id="selectBySigntype" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select *
+        from "t_sign_record"
+        where sign_type = #{sign_type,jdbcType=INTEGER}
+    </select>
+
 </mapper>
