@@ -1,0 +1,122 @@
+11:19:44.945 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 2192 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+11:19:44.948 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+11:19:45.811 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+11:19:45.820 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+11:19:45.820 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:19:45.820 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+11:19:45.901 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:19:45.901 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 897 ms
+11:19:45.953 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:19:45.967 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:20:07.291 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 10496 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+11:20:07.294 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+11:20:08.070 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+11:20:08.078 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+11:20:08.079 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:20:08.079 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+11:20:08.152 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:20:08.153 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 807 ms
+11:20:08.203 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:20:08.216 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:16:15.081 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 15432 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+13:16:15.083 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+13:16:15.851 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+13:16:15.858 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+13:16:15.859 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:16:15.859 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+13:16:15.939 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:16:15.939 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 813 ms
+13:16:15.990 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+13:16:16.004 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:27:51.197 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 15040 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+13:27:51.202 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+13:27:52.028 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+13:27:52.036 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+13:27:52.037 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:27:52.037 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+13:27:52.117 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:27:52.118 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 867 ms
+13:27:52.166 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+13:27:52.180 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:31:29.218 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 10700 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+13:31:29.221 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+13:31:29.998 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+13:31:30.005 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+13:31:30.006 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:31:30.006 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+13:31:30.083 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:31:30.083 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 820 ms
+13:31:30.131 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+13:31:30.145 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - [logMessage,136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:38:23.807 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 6460 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+13:38:23.811 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+13:38:24.658 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+13:38:24.666 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+13:38:24.667 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:38:24.667 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+13:38:24.748 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:38:24.748 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 884 ms
+13:38:25.010 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:38:25.144 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+13:38:25.166 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6090"]
+13:38:25.186 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 6090 (http) with context path ''
+13:38:25.198 [main] INFO  c.k.s.c.SvSProApplication - [logStarted,61] - Started SvSProApplication in 1.893 seconds (JVM running for 2.569)
+13:38:25.200 [main] INFO  c.k.s.c.SvSProApplication - [main,25] - =====================================签名验签启动成功=====================================
+13:38:39.170 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+13:38:39.172 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+13:39:31.922 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 12612 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+13:39:31.925 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+13:39:32.757 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+13:39:32.766 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+13:39:32.766 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:39:32.767 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+13:39:32.844 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:39:32.845 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 868 ms
+13:39:33.100 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:39:33.230 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+13:39:33.251 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6090"]
+13:39:33.271 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 6090 (http) with context path ''
+13:39:33.282 [main] INFO  c.k.s.c.SvSProApplication - [logStarted,61] - Started SvSProApplication in 1.873 seconds (JVM running for 2.704)
+13:39:33.284 [main] INFO  c.k.s.c.SvSProApplication - [main,22] - =====================================签名验签启动成功=====================================
+13:39:35.801 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+13:39:35.803 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+13:53:14.985 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 17664 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+13:53:14.988 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+13:53:15.844 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+13:53:15.852 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+13:53:15.853 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:53:15.853 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+13:53:15.928 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:53:15.928 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 889 ms
+13:53:16.209 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+13:53:16.334 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+13:53:16.356 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6090"]
+13:53:16.374 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 6090 (http) with context path ''
+13:53:16.386 [main] INFO  c.k.s.c.SvSProApplication - [logStarted,61] - Started SvSProApplication in 1.886 seconds (JVM running for 2.687)
+13:53:16.388 [main] INFO  c.k.s.c.SvSProApplication - [main,22] - =====================================签名验签启动成功=====================================
+13:53:26.280 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - [shutdown,218] - Shutting down ExecutorService 'taskScheduler'
+13:53:26.281 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - [shutdown,218] - Shutting down ExecutorService 'applicationTaskExecutor'
+14:39:57.672 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 13740 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+14:39:57.677 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+14:39:58.573 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 6090 (http)
+14:39:58.582 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-6090"]
+14:39:58.583 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:39:58.583 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+14:39:58.662 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:39:58.662 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 933 ms
+14:39:58.937 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+14:39:59.073 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+14:39:59.096 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-6090"]
+14:39:59.115 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 6090 (http) with context path ''
+14:39:59.127 [main] INFO  c.k.s.c.SvSProApplication - [logStarted,61] - Started SvSProApplication in 1.952 seconds (JVM running for 2.716)
+14:39:59.129 [main] INFO  c.k.s.c.SvSProApplication - [main,22] - =====================================签名验签启动成功=====================================

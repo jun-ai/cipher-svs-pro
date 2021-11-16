@@ -1,0 +1,14 @@
+10:36:44.980 [main] INFO  c.k.s.c.SvSProApplication - [logStarting,55] - Starting SvSProApplication on DESKTOP-TLVRNH4 with PID 6576 (D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro\target\classes started by yangj in D:\Java_Tools\Java\IDEA_WorkPlace\cipher-svs-pro)
+10:36:44.986 [main] INFO  c.k.s.c.SvSProApplication - [logStartupProfileInfo,655] - The following profiles are active: pro
+10:36:45.870 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,108] - Tomcat initialized with port(s): 9014 (http)
+10:36:45.878 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9014"]
+10:36:45.879 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:36:45.879 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.43]
+10:36:45.955 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:36:45.955 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - [prepareWebApplicationContext,285] - Root WebApplicationContext: initialization completed in 922 ms
+10:36:46.329 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,181] - Initializing ExecutorService 'applicationTaskExecutor'
+10:36:46.460 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - [initialize,181] - Initializing ExecutorService 'taskScheduler'
+10:36:46.483 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9014"]
+10:36:46.506 [main] INFO  o.s.b.w.e.t.TomcatWebServer - [start,220] - Tomcat started on port(s): 9014 (http) with context path ''
+10:36:46.519 [main] INFO  c.k.s.c.SvSProApplication - [logStarted,61] - Started SvSProApplication in 1.996 seconds (JVM running for 3.481)
+10:36:46.521 [main] INFO  c.k.s.c.SvSProApplication - [main,22] - =====================================签名验签启动成功=====================================
