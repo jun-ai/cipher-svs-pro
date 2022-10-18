@@ -9,9 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
+
 
 @Slf4j
 @RestController
@@ -23,10 +22,11 @@ public class ManageFileController {
     private ManageFileService manageFileService;
 
 
-    @PostMapping(value = { "/uploadFile" }, consumes = "multipart/*", produces="application/json;charset=UTF-8")
-    @ApiOperation(value = "上传文件(压缩)", notes = "上传文件(压缩)")
-    public ResultUtil uploadFile(@RequestParam(value = "file") MultipartFile file) {
-        return ResultUtil.success("上传成功");
+    @PostMapping(value = { "/uploadFile" },produces="application/json;charset=UTF-8")
+    @ApiOperation(value = "市场报价信息导入", notes = "市场报价信息导入")
+    public ResultUtil uploadFile() {
+        //@RequestParam(value = "file") MultipartFile file
+        return  manageFileService.insertTable();
     }
 
 }

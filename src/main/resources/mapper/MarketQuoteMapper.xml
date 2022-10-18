@@ -2,4 +2,18 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.koalii.svs.client.dao.MarketQuoteMapper">
 
+    <insert id="insertTable" parameterType="java.util.List">
+        insert into MARKET_QUOTE (MARKET_ID,CURVE_NAME,INSTRUMENT_TYPE,INSTRUMENT_NAME,TENOR,QUOTE,MATURITY_DATE,M_H_REP_DATE,CREATE_DATE) values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.MARKET_ID,jdbcType=INTEGER},
+             #{item.CURVE_NAME,jdbcType=VARCHAR},
+             #{item.INSTRUMENT_TYPE,jdbcType=VARCHAR},
+             #{item.INSTRUMENT_NAME,jdbcType=VARCHAR},
+             #{item.TENOR,jdbcType=VARCHAR},
+             #{item.QUOTE,jdbcType=VARCHAR},
+             #{item.MATURITY_DATE,jdbcType=VARCHAR},
+             #{item.M_H_REP_DATE,jdbcType=VARCHAR},
+             #{item.CREATE_DATE,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
 </mapper>

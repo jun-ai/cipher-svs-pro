@@ -23,7 +23,7 @@ public class Knife4jConfig {
                 .useDefaultResponseMessages(false)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.koalii.svs.client.dto.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.koalii.svs.client.controller"))
                 .paths(PathSelectors.any())
                 .build();
 
