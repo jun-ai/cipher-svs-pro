@@ -27,7 +27,11 @@ spring:
       connection-test-query: SELECT 1
 # MyBatis
 mybatis:
+  # 搜索指定包别名
+  typeAliasesPackage: com.koalii.svs.client.dao
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
-  mapperLocations: classpath*:com/koalii/svs/client/dao/*.xml
+  mapperLocations: classpath*:mapper/*Mapper.xml
+  # 加载全局的配置文件
+  configLocation: classpath:mapper/mybatis-config.xml
 logging:
-  config: classpath:logback.xml
+  config: classpath:logback-spring.xml

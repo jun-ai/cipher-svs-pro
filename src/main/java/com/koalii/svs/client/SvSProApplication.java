@@ -5,11 +5,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 @MapperScan("com.koalii.svs.client.dao")
 public class SvSProApplication {
 
@@ -19,6 +18,6 @@ public class SvSProApplication {
 
         SpringApplication.run(SvSProApplication.class, args);
 
-        log.info("=====================================签名验签启动成功=====================================");
+        log.info("=====================================SVS启动成功=====================================");
     }
 }
